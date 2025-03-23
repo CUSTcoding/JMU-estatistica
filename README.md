@@ -1,3 +1,4 @@
+<<<<<<< HEAD
  
 # 📊 Sistema de Levantamento de Dados
 
@@ -149,3 +150,7 @@ Para contribuir, siga o fluxo **Git Flow**:
 ⭐ **Se gostou do projeto, não esqueça de dar uma estrela!** ⭐  
 
 
+=======
+# JMU-estatistica
+🔍 JMU-Estatística – Repositório voltado para a coleta e organização de dados estatísticos. Contém scripts e ferramentas para obter dados de diversas fontes, prepará-los para análise e garantir a qualidade e consistência das informações coletadas.
+>>>>>>> cf1471310429fdd18fae2144d810e2421d0d6c69
