@@ -1,0 +1,289 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f8fafc;
+}
+
+
+.section-title {
+    color: #2563eb;
+    margin: 2rem 0 1.5rem;
+    font-size: 1.3rem;
+    font-weight: 600;
+    position: relative;
+    padding-left: 1rem;
+}
+
+.section-title::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 70%;
+    width: 3px;
+    background: #2563eb;
+    border-radius: 2px;
+}
+
+
+button {
+    background: linear-gradient(135deg, #2563eb, #1d4ed8);
+    color: white;
+    padding: 1.1rem 2.4rem;
+    border: none;
+    border-radius: 8px !important;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: transform 0.2s ease;
+    margin-top: 2rem;
+    display: inline-block;
+    width: auto;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.2);
+}
+
+
+.is-invalid {
+    border: 2px solid red !important;
+}
+
+.check {
+    display: flex;
+    justify-content: space-between; /* Espaça uniformemente os itens */
+    align-items: center; /* Alinha os itens verticalmente */
+}
+
+/* Estilos para o input radio */
+.form-check-input {
+    border: 2px solid black; /* Borda preta de 2px */
+    width: 18px;  /* Ajuste o tamanho do radio */
+    height: 18px; /* Ajuste o tamanho do radio */
+}
+
+/* Ajuste o espaçamento entre o input e o label */
+.form-check-label {
+    margin-left: 8px; /* Espaço entre o radio e o label */
+    display: flex;
+    align-items: center; /* Alinha o texto com o input */
+}
+
+/* Para personalizar a cor da sombra */
+.shadow, .form-select {
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.7); /* Exemplo de sombra azul */
+    border: 1px solid #121212;
+}
+
+#Title-doc{
+    top: 10%;
+}
+
+
+#main .par{
+    position: absolute;
+    left: 50%;
+}
+#main .impar{
+    position: absolute;
+    right: 50%;
+}
+.container::before{
+    content: '';
+    position: absolute;
+    width: 2000px;
+    height: 2000px;
+    border-radius: 50%;
+    background: linear-gradient(-45deg, #4481eb,#04befe);
+    top: -10%;
+    right: 48%;
+    transform: translateY(-50%);
+    z-index: 3;
+    transition: 1.6s ease-in-out;
+}
+.container.mode-right::before{
+    transform: translate(100%, -50%);
+    right: 52%;
+}
+
+.leftmode{
+    pointer-events: none;
+}
+.rigthmode{
+    pointer-events: all;
+}
+
+.painels-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.left{
+    padding: 3rem 25% 2rem 10%;
+    display: flex;
+    opacity: 0;
+    z-index: -1;
+    
+}
+.rigth{
+    padding: 3rem 10% 2rem 25%;
+    display: flex;
+    opacity: 0;
+    z-index: -1;
+   
+}
+
+.active{
+    z-index: 2;
+}
+.titlegeral{
+    z-index: 5;
+}
+
+.active01{
+    opacity: 1;
+    z-index: 3;
+}
+form{
+    width: 50vw;
+    height: 50vh;
+}
+h2, .comtent h2{
+    font-size: 2rem !important;
+}
+.content{
+    margin-top: 1rem !important;
+}
+p{
+    font-size: 1.2rem;
+}
+
+ 
+
+/*=====animacao====*/
+@media (max-width: 767px) {
+    .container{
+        min-height: 800px;
+        height: 100vh;
+    }
+    
+    .painels-container{
+        display: flex;
+        /*background: #121212;*/
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .painel {
+        height: 30%;
+    }
+   
+
+    
+   form{
+    position: absolute;
+    width: 90vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+   }
+   #main .B{
+    top: 32% !important;
+   }
+    #main .par{
+        position: relative;
+        left: 0;
+        top: 37%;
+        width: 100% !important;
+        height: auto;
+
+    }
+    #main .impar{
+        position: relative;
+        top: 2rem;
+        right: 0;
+        width: 100% !important;
+        height: auto;
+        
+        
+    }
+
+    h2 {
+        width: 80%;
+        padding-top: 0rem;
+        margin-bottom: 25px;
+        font-size: 1.2rem;
+    }
+    .section-title {  
+        margin: 0.2rem 0 0rem;
+        font-size: 1rem;
+        font-weight: 500;  
+    }
+    .left{
+        padding: 3.1rem 4% 3rem 4%;
+        display: flex;
+        opacity: 0;
+        z-index: -1;
+        
+    }
+    .rigth{
+        padding: 2rem 4% 2rem 4%;
+        display: flex;
+        /*opacity: 0;*/
+        z-index: -1;
+       
+    }
+    .active01{
+        opacity: 1;
+        z-index: 3;
+    }
+    .content{
+        display: flex;
+        margin-top: 0rem !important;
+
+    }
+    .container::before{
+        content: '';
+        position: absolute;
+        width: 2000px;
+        height: 2000px;
+        border-radius: 50%;
+        background: linear-gradient(-45deg, #4481eb,#04befe);
+        left: 30%;
+        bottom: 60%;
+        transform: translateX(-50%);
+        right: inherit;
+        top: initial;
+        z-index: 3;
+        transition: 1.6s ease-in-out;
+    }
+    .container.mode-right::before{
+        transform: translate(-50%, 100%);
+        bottom: 30%;
+        right: initial;
+    }
+    
+    .leftmode{
+        pointer-events: none;
+    }
+    .rigthmode{
+        pointer-events: all;
+    }
+    p{
+        font-size: 0.8rem !important;
+    
+    }
+    .section-title{
+        font-weight: bolder;
+    }
+    h2, .comtent h2{
+        font-size: 0.99rem !important;
+    }
+
+}

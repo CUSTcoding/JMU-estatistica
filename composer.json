@@ -1,0 +1,26 @@
+{
+    "name": "cust-coding-solutions/jmu_estatistica",
+    "description": "Sistema de estatistica da JMU",
+    "require": {
+        "vlucas/phpdotenv": "5.4"
+    },
+    "license": "GPL-3.0",
+    "autoload": {
+        "psr-4": {
+            "CustCodingSolutions\\JmuEstatistica\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "custodio titosse/cust coding",
+            "email": "custodiotitossetitosse@gamail.com",
+            "profissao": "fullstack"
+        },
+        {
+            "name": "jamisse",
+            "email": "",
+            "profissao": "frontend"
+        }
+    ],
+    "minimum-stability": "stable"
+}

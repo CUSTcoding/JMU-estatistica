@@ -1,0 +1,7 @@
+# 🛑 Ignorar dependências do Composer
+/vendor/
+composer.lock
+
+# 🛑 Ignorar credenciais sensíveis
+.env
+.env.local
