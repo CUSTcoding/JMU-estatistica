@@ -5,3 +5,39 @@ composer.lock
 # 🛑 Ignorar credenciais sensíveis
 .env
 .env.local
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pyc
+
+# Virtualenv
+venv/
+env/
+ENV/
+
+# Django
+*.log
+*.pot
+*.pyc
+media/
+staticfiles/
+
+# Environment variables
+.env
+*.env
+
+# IDEs e editores
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Docker
+*.dockerignore
+docker-compose.override.yml

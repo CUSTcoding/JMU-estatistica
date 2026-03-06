@@ -1,15 +1,18 @@
+# Use Python 3.11
 FROM python:3.11-slim
 
+# Define diretório de trabalho dentro do container
 WORKDIR /app
 
-# Volta para copiar requirements da raiz do projeto
-COPY ../requirements.txt .
+# Copia e instala dependências
+COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
-# Copia todo o conteúdo da pasta atual (jmu/) para /app
+# Copia todo o projeto para /app
 COPY . .
 
+# Expõe a porta 8000 para o Django
 EXPOSE 8000
 
-# CMD agora aponta para manage.py dentro de /app
-CMD ["python", "manage.py", "runserver", "0.0.0.0:8000"]
+# Comando para rodar o servidor Django
+CMD ["python", "jmu/manage.py", "runserver", "0.0.0.0:8000"]
