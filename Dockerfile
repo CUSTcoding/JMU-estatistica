@@ -15,4 +15,4 @@ COPY . .
 EXPOSE 8000
 
 # Comando para rodar o servidor Django
-CMD ["python", "jmu/manage.py", "runserver", "0.0.0.0:8000"]
+CMD ["gunicorn", "jmu.wsgi:application", "--bind", "0.0.0.0:8080"]
