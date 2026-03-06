@@ -40,6 +40,10 @@ INSTALLED_APPS = [
     'form',
 ]
 
+CSRF_TRUSTED_ORIGINS = [
+    "https://jmu-estatistica-production-a630.up.railway.app"
+]
+
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
